@@ -1,0 +1,125 @@
+<div class="slide_show">
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="/assets/slide_show/web-vans-classic-1500x560.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/assets/slide_show/web-Palladium-Pallabrousse-Legion-1500x560.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/assets/slide_show/Chuck-70-banner-web-home1-1500x560.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<div class="ban_chay">
+  <div class="container">
+    <h2 class="tieu_de"><b></b> <span>Bán chạy nhất</span> <b></b></h2>
+    <div class="sp_ban_chay_nhat">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6" ng-repeat="sp in listBanChay ">
+          <div class="card" style="width: 18rem">
+            <a href="#san-pham/detail-sp-moi/{{sp.id}}"
+              ><img
+                src="/assets/sp_moi/{{sp.img}}"
+                class="card-img-top"
+                alt="..."
+            /></a>
+
+            <div class="card-body">
+              <h6 class="card-title">
+                <a href="#san-pham/detail-sp-moi/{{sp.id}}"> {{sp.name}}</a>
+              </h6>
+              <h5 class="card-text">{{sp.price}}<span>₫</span></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="moi">
+  <div class="container">
+    <h2 class="tieu_de"><b></b> <span>Sản phẩm mới</span> <b></b></h2>
+    <div class="sp_moi">
+      <div class="row">
+        <div
+          class="col-lg-3 col-md-4 col-sm-6"
+          ng-repeat="spMoi in listSpMoi | orderBy: '-id' "
+        >
+          <div class="card" style="width: 18rem">
+            <a href="#san-pham/detail-sp-moi/{{spMoi.id}}">
+              <img
+                src="/assets/sp_moi/{{spMoi.img}}"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+
+            <div class="card-body">
+              <h6 class="card-title">
+                <a href="#san-pham/detail-sp-moi/{{spMoi.id}}">
+                  {{spMoi.name}}</a
+                >
+              </h6>
+              <h5 class="card-text">{{spMoi.price}}<span>₫</span></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

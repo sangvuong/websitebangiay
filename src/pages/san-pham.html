@@ -1,0 +1,67 @@
+<div class="san_pham">
+  <div class="container">
+    <h1>Tất cả sản phẩm</h1>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="menu_doc">
+          <div class="list-group">
+            <a
+              href="#san-pham"
+              ng-click="filterBrand(-1)"
+              class="list-group-item list-group-item-action active"
+              aria-current="true"
+            >
+              THƯƠNG HIỆU
+            </a>
+            <hr />
+            <a
+              href="#san-pham"
+              class="list-group-item list-group-item-action"
+              ng-repeat="brand in listBrand"
+              ng-click="filterBrand($index)"
+              >{{brand.name}}</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-9">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6" ng-repeat="spMoi in listFilterBrand">
+            <div class="card" style="width: 18rem">
+              <a href="#san-pham/detail-sp-moi/{{spMoi.id}} ">
+                <img
+                  src="/assets/sp_moi/{{spMoi.img}}"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <h6 class="card-title">
+                  <a href="#san-pham/detail-sp-moi/{{spMoi.id}}">
+                    {{spMoi.name}}</a
+                  >
+                </h6>
+                <h5 class="card-text">{{spMoi.price}}<span>₫</span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="phan_trang">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

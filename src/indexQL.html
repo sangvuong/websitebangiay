@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="../css/plugin/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/custom/style1.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link disable">Admin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#quan-ly-sp"
+              >QL Sản phẩm</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#quan-ly-category">QL Category</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section ng-view></section>
+    <footer>--------- Admin ---------</footer>
+    <script src="../lib/angular.js"></script>
+    <script src="../lib/angular-route.js"></script>
+    <script src="./config/api.js"></script>
+    <script src="./controller/giaysneaker/giay-sneaker-controller.js"></script>
+    <script src="./controller/user/user-controller.js"></script>
+    <script src="routeQL.js"></script>
+    <script src="../js/plugin/bootstrap.bundle.min.js"></script>
+    <script src="../js/plugin/bootstrap.min.js"></script>
+  </body>
+</html>

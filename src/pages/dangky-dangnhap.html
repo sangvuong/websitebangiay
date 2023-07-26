@@ -1,0 +1,144 @@
+<div class="container">
+  <div class="dangNhap_dangKy">
+    <div class="row">
+      <div class="col-6 dang_nhap">
+        <h4>Đăng nhập</h4>
+        <form class="dang_nhap" name="dang_nhap">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Tên tài khoản *</label
+            >
+            <input
+              name="username"
+              type="text"
+              class="form-control"
+              ng-model="form_dangNhap.username"
+              required=""
+              ng-minlength="8"
+            />
+            <div
+              ng-show="dang_nhap.username.$touched && dang_nhap.username.$invalid"
+            >
+              <span ng-show="dang_nhap.username.$error.required"
+                >Tên tài khoản trống</span
+              >
+              <span ng-show="dang_nhap.username.$error.minlength"
+                >Tên tài khoản phải lớn hơn 8 ký tự</span
+              >
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Mật khẩu *</label
+            >
+            <input
+              name="password"
+              type="password"
+              class="form-control"
+              ng-model="form_dangNhap.password"
+              required=""
+              ng-minlength="8"
+            />
+            <div
+              ng-show="dang_nhap.password.$touched && dang_nhap.password.$invalid"
+            >
+              <span ng-show="dang_nhap.password.$error.required"
+                >Password trống</span
+              >
+              <span ng-show="dang_nhap.password.$error.minlength"
+                >Password phải lớn hơn 8 ký tự</span
+              >
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-dark"
+            ng-click="form_dangNhap($event)"
+          >
+            Đăng nhập
+          </button>
+          <br />
+          <a href="#quen-mat-khau">Quên mật khâu?</a>
+        </form>
+      </div>
+      <div class="col-6">
+        <form class="dang_ky" name="dang_ky">
+          <h4>Đăng ký</h4>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label" required=""
+              >Tên tài khoản *</label
+            >
+            <input
+              name="username"
+              type="text"
+              class="form-control"
+              ng-model="form_dangKy.username"
+              required=""
+              ng-minlength="8"
+            />
+            <div
+              ng-show="dang_ky.username.$touched && dang_ky.username.$invalid"
+            >
+              <span ng-show="dang_ky.username.$error.required"
+                >Tên tài khoản trống</span
+              >
+              <span ng-show="dang_ky.username.$error.minlength"
+                >Tên tài khoản phải lớn hơn 8 ký tự</span
+              >
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Địa chỉ email *</label
+            >
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              ng-model="form_dangKy.email"
+              required=""
+              ng-pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+            />
+            <div ng-show="dang_ky.email.$touched && dang_ky.email.$invalid">
+              <span ng-show="dang_ky.email.$error.required">Email trống</span>
+              <span ng-show="dang_ky.email.$error.pattern"
+                >Email không đúng định dạng</span
+              >
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Mật khẩu *</label
+            >
+            <input
+              type="password"
+              name="password"
+              class="form-control"
+              ng-model="form_dangKy.password"
+              required=""
+              ng-minlength="8"
+            />
+            <div
+              ng-show="dang_ky.password.$touched && dang_ky.password.$invalid"
+            >
+              <span ng-show="dang_ky.password.$error.required"
+                >Password trống</span
+              >
+              <span ng-show="dang_ky.password.$error.minlength"
+                >Password phải lớn hơn 8 ký tự</span
+              >
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-dark"
+            ng-click="registration($event)"
+          >
+            Đăng ký
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

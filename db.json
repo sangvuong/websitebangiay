@@ -1,0 +1,254 @@
+{
+  "spMoi": [
+    {
+      "id": 1,
+      "img": "anh1.jpg",
+      "name": "New Balance 452 – Beige",
+      "price": 2800000,
+      "quantity": 20,
+      "brand": "New Balance"
+    },
+    {
+      "id": 2,
+      "img": "anh2.jpg",
+      "name": "New Balance 574 – Tokyo Design Cloud Burgundy",
+      "price": 4000000,
+      "quantity": 20,
+      "brand": "New Balance"
+    },
+    {
+      "id": 3,
+      "img": "anh3.jpg",
+      "name": "New Balance 530 – Light Beige",
+      "price": 3000000,
+      "quantity": 20,
+      "brand": "New Balance"
+    },
+    {
+      "id": 4,
+      "img": "anh4.jpg",
+      "name": "Nike Court Vision Low – Sail Pro Green Opti Yellow",
+      "price": 2150000,
+      "quantity": 20,
+      "brand": "Nike"
+    },
+    {
+      "id": 5,
+      "img": "anh5.jpg",
+      "name": "adidas Samba Classic – White",
+      "price": 2600000,
+      "quantity": 30,
+      "brand": "Adidas"
+    },
+    {
+      "id": 6,
+      "img": "anh6.jpg",
+      "name": "Nike Air Force 1 Low – Valentine’s Day 2023",
+      "price": 4500000,
+      "quantity": 30,
+      "brand": "Nike"
+    },
+    {
+      "id": 7,
+      "img": "anh7.jpg",
+      "name": "Asics Gel Kayano 14 – Birch Grey",
+      "price": 4250000,
+      "quantity": 10,
+      "brand": "Nike"
+    },
+    {
+      "id": 8,
+      "img": "anh8.jpg",
+      "name": "Nike Air Force 1 Low – White Chocolate",
+      "price": 3300000,
+      "quantity": 20,
+      "brand": "Nike"
+    },
+    {
+      "id": 9,
+      "img": "anh9.jpg",
+      "name": "Nike Air Force 1 Low White",
+      "price": 3300000,
+      "quantity": 20,
+      "brand": "Nike"
+    },
+    {
+      "id": 10,
+      "img": "anh10.jpg",
+      "name": "Nike Air Force 1 Low – Double Swoosh Sail Cinnabar Phantom",
+      "price": 3300000,
+      "quantity": 12,
+      "brand": "Nike"
+    },
+    {
+      "id": 11,
+      "img": "anh11.jpg",
+      "name": "Nike Air Force 1 Low – White Grey",
+      "price": 3650000,
+      "quantity": 20,
+      "brand": "Nike"
+    },
+    {
+      "id": 12,
+      "img": "anh12.jpg",
+      "name": "Nike Air Force 1 Low – Cosmic Fuchsia",
+      "price": 3000000,
+      "quantity": 25,
+      "brand": "Nike"
+    },
+    {
+      "id": 13,
+      "img": "anh13.jpg",
+      "name": "Nike Air Force 1 Low White",
+      "price": 3000000,
+      "quantity": 20,
+      "brand": "Nike"
+    },
+    {
+      "id": 14,
+      "img": "anh14.jpg",
+      "name": "MLB Mule NY – Black",
+      "price": 1500000,
+      "quantity": 20,
+      "brand": "MLB"
+    },
+    {
+      "id": 15,
+      "img": "anh15.jpg",
+      "name": "Domba High Point – White / Black",
+      "price": 1000000,
+      "quantity": 10,
+      "brand": "Domba"
+    },
+    {
+      "id": 16,
+      "img": "anh16.jpg",
+      "name": "adidas Superstar – Gold Label",
+      "price": 2100000,
+      "quantity": 20,
+      "brand": "Adidas"
+    },
+    {
+      "id": 17,
+      "img": "anh17.jpg",
+      "name": "Nike Court Legacy Leather – White Desert Ochre",
+      "price": 2000000,
+      "quantity": 20,
+      "brand": "Nike"
+    },
+    {
+      "id": 18,
+      "img": "anh18.jpg",
+      "name": "Nike Blazer Mid Vintage – White/Black",
+      "price": 2900000,
+      "quantity": 20,
+      "brand": "Nike"
+    },
+    {
+      "id": 19,
+      "img": "anh19.jpg",
+      "name": "Air Jordan 1 Mid – Black Chile Red",
+      "price": 4800000,
+      "quantity": 20,
+      "brand": "Nike"
+    },
+    {
+      "id": 20,
+      "img": "anh20.jpg",
+      "name": "MLB Big Ball Chunky – NY",
+      "price": 2100000,
+      "quantity": 20,
+      "brand": "MLB"
+    }
+  ],
+  "gioHang": [
+    {
+      "id": 2,
+      "img": "anh2.jpg",
+      "name": "New Balance 574 – Tokyo Design Cloud Burgundy",
+      "price": 4000000,
+      "quantity": 2,
+      "brand": "New Balance"
+    },
+    {
+      "id": 4,
+      "img": "anh4.jpg",
+      "name": "Nike Court Vision Low – Sail Pro Green Opti Yellow",
+      "price": 2150000,
+      "quantity": 1,
+      "brand": "Nike"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "username": "sang123",
+      "password": "12345678",
+      "email": "sang123@gmail.com"
+    },
+    {
+      "username": "tuan123",
+      "password": "12345678",
+      "email": "tuan@gmail.com",
+      "id": 2
+    },
+    {
+      "username": "hieu",
+      "password": "1234556",
+      "email": "hieu123@gmail.com",
+      "id": 3
+    },
+    {
+      "username": "huytq",
+      "password": "123456789",
+      "email": "huytq@gmail.com",
+      "id": 4
+    },
+    {
+      "username": "dungvt1234",
+      "password": "dung12345678",
+      "email": "dungvt@gmail.com",
+      "id": 5
+    }
+  ],
+  "brand": [
+    {
+      "id": "b1",
+      "name": "Nike"
+    },
+    {
+      "id": "b2",
+      "name": "Adidas"
+    },
+    {
+      "id": "b3",
+      "name": "New Balance"
+    },
+    {
+      "id": "b4",
+      "name": "MLB"
+    },
+    {
+      "id": "b5",
+      "name": "Fila"
+    },
+    {
+      "id": "b6",
+      "name": "Dior"
+    },
+    {
+      "id": "b7",
+      "name": "Gucci"
+    }
+  ],
+  "spDaMua": [
+    {
+      "id": 1,
+      "img": "anh1.jpg",
+      "name": "New Balance 452 – Beige",
+      "price": 2800000,
+      "quantity": 2,
+      "brand": "New Balance"
+    }
+  ]
+}

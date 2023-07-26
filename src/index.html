@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="../css/plugin/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/custom/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header ng-include="'layout/header.html'"></header>
+    <!-- body -->
+    <section ng-view></section>
+    <!-- footer -->
+    <footer ng-include="'layout/footer.html'"></footer>
+    <script src="../lib/angular.js"></script>
+    <script src="../lib/angular-route.js"></script>
+    <script src="./controller/giaysneaker/giay-sneaker-controller.js"></script>
+    <script src="./controller/user/user-controller.js"></script>
+    <script src="./config/api.js"></script>
+    <script src="route.js"></script>
+    <script src="../js/plugin/bootstrap.bundle.min.js"></script>
+    <script src="../js/plugin/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<div class="container">
+  <div class="quan_ly_sp">
+    <h1>Quản lý sản phẩm</h1>
+    <form>
+      <div class="mb-3 row">
+        <label class="col-sm-2 col-form-label">Product Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" ng-model="form_sp.name" />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label class="col-sm-2 col-form-label">Price</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" ng-model="form_sp.price" />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label class="col-sm-2 col-form-label">Quantity</label>
+        <div class="col-sm-10">
+          <input
+            type="number"
+            class="form-control"
+            ng-model="form_sp.quantity"
+          />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label class="col-sm-2 col-form-label">Thương hiệu</label>
+        <div class="col-sm-10">
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            ng-model="form_sp.brand"
+          >
+            <option value="{{brand.name}}" ng-repeat="brand in listBrand">
+              {{brand.name}}
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label class="col-sm-2 col-form-label">Image</label>
+        <div class="col-sm-10">
+          <div class="mb-3">
+            <input
+              class="form-control"
+              type="file"
+              id="formFile"
+              ng-model="form_sp.img"
+            />
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-success" ng-click="addSp($event)">
+        Add
+      </button>
+      <button type="button" class="btn btn-success" ng-click="updateSp($event)">
+        Update
+      </button>
+    </form>
+    <table class="table align-middle mb-0 bg-white">
+      <thead class="bg-light">
+        <tr>
+          <th>#</th>
+          <th>Image</th>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Thương hiệu</th>
+          <th>Function</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="sp in listSpMoi">
+          <td>{{$index +1}}</td>
+          <td>
+            <div class="d-flex align-items-center">
+              <img
+                src="/assets/sp_moi/{{sp.img}}"
+                alt=""
+                style="width: 45px; height: 45px"
+                class="rounded-circle"
+              />
+            </div>
+          </td>
+          <td>{{sp.name}}</td>
+          <td>{{sp.price}}</td>
+          <td>{{sp.quantity}}</td>
+          <td>{{sp.brand}}</td>
+          <td>
+            <a
+              href="#quan-ly-sp/detail/{{sp.id}}"
+              ng-click="detailSp($event, $index)"
+              >Detail</a
+            >
+            <a
+              href="#quan-ly-sp/delete/{{sp.id}} "
+              ng-click="deleteSp($event, $index)"
+              >Delete</a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+.nav-link {
+  color: black;
+}
+.nav-link.active {
+  color: black;
+}
+.quan_ly_sp {
+  margin-top: 2em;
+}
+.quan_ly_sp h1 {
+  text-align: center;
+}
+.quan_ly_sp form {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.quan_ly_sp form .form-control {
+  width: 500px;
+}
+
+.quan_ly_sp form .form-select {
+  width: 500px;
+}
+
+.quan_ly_category {
+  margin-top: 2em;
+}
+.quan_ly_category h1 {
+  text-align: center;
+}
+.quan_ly_category form {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.quan_ly_category form .form-control {
+  width: 500px;
+}
+
+.quan_ly_category form .form-select {
+  width: 500px;
+}
+footer {
+  text-align: center;
+  margin-top: 4em;
+  margin-top: 2em;
+}

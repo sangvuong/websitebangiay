@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="gio_hang">
+    <h1>Giỏ hàng</h1>
+    <table class="table align-middle mb-0 bg-white">
+      <thead class="bg-light">
+        <tr>
+          <th>Sản phẩm</th>
+          <th></th>
+          <th>Giá</th>
+          <th>Số lượng</th>
+          <th>Tạm tính</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="gh in listGioHang">
+          <td>
+            <div class="d-flex align-items-center">
+              <img
+                src="/assets/sp_moi/{{gh.img}}"
+                alt=""
+                style="width: 100px; height: 100px"
+                class="rounded-circle"
+              />
+            </div>
+          </td>
+          <td>{{gh.name}}</td>
+          <td>{{gh.price}}<span>₫</span></td>
+          <td>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link">-</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link">{{gh.quantity}}</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link">+</a>
+                </li>
+              </ul>
+            </nav>
+          </td>
+          <td>{{gh.quantity * gh.price}}<span>₫</span></td>
+          <td>
+            <a
+              href="#gio-hang/delete/{{gh.id}}"
+              ng-click="deleteGioHang($event, $index)"
+              >Xóa</a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="button" class="btn btn-success">Mua hàng</button>
+  </div>
+</div>
